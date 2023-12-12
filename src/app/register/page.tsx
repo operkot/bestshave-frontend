@@ -1,4 +1,4 @@
-export default function Signup() {
+export default function Register() {
   return (
     <main>
       <p>Signup page</p>

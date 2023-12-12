@@ -5,9 +5,9 @@ import { signIn } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 
-import { INITIAL_VALUES } from './config/constants'
-import { TSigninCredentials } from './model/types'
-import { validationSchema } from './model/validation'
+import { INITIAL_VALUES } from '../../config/constants'
+import { TSigninCredentials } from '../../model/types'
+import { validationSchema } from '../../model/validation'
 
 export function SigninForm() {
   const [authErrStatus, setAuthErrStatus] = useState<boolean>(false)
@@ -37,12 +37,12 @@ export function SigninForm() {
     >
       <Form className="p-6">
         {authErrStatus && (
-          <p className="mb-4 text-red-500">Неправильный email или пароль!</p>
+          <p className="mb-4 text-danger">Неправильный email или пароль!</p>
         )}
 
         <div className="mb-4">
           <label htmlFor="email" className="block text-sm mb-2">
-            Email:<span className="text-red-500">*</span>
+            Email:<span className="text-danger">*</span>
           </label>
           <Field
             id="email"
@@ -53,13 +53,13 @@ export function SigninForm() {
           <ErrorMessage
             component="p"
             name="email"
-            className="text-xs text-red-500"
+            className="text-sm text-danger"
           />
         </div>
 
         <div className="mb-4">
           <label htmlFor="password" className="block text-sm mb-2">
-            Пароль:<span className="text-red-500">*</span>
+            Пароль:<span className="text-danger">*</span>
           </label>
           <Field
             id="password"
@@ -70,7 +70,7 @@ export function SigninForm() {
           <ErrorMessage
             component="p"
             name="password"
-            className="text-xs text-red-500"
+            className="text-sm text-danger"
           />
         </div>
 

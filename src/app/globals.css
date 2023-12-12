@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --wrapper-max-width: 1336px;
+  }
+
+  body {
+    @apply font-montserrat bg-gray-50 text-gray-950;
+  }
+}
+
+@layer components {
+  .wrapper {
+    max-width: var(--wrapper-max-width);
+    @apply mx-auto px-4;
+  }
+}

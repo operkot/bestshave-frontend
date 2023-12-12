@@ -1,4 +1,4 @@
-import { ProfileMenu } from '@/components/profile-menu'
+import { ProfileMenu } from '@/entities/profile'
 
 export default function ProfileLayout({
   children,

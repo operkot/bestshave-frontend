@@ -40,6 +40,6 @@ export const AUTH_CONFIG: AuthOptions = {
     },
   },
   pages: {
-    signIn: '/signin',
+    signIn: '/auth',
   },
 }

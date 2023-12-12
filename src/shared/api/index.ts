@@ -1,9 +1,8 @@
 import fetcher from './fetcher'
-import { TSigninCredentials } from '@/components/signin-form/model/types'
 
 export default {
   auth: {
-    signin: (creds: TSigninCredentials) =>
+    signin: (creds: any) =>
       fetcher({
         url: '/auth/local',
         method: 'POST',

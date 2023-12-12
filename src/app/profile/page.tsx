@@ -5,7 +5,7 @@ import { AUTH_CONFIG } from '@/shared/config/auth'
 import api from '@/shared/api'
 
 export const metadata: Metadata = {
-  title: 'Личный кабинет | Bestshave',
+  title: 'Личный кабинет • Bestshave',
 }
 
 export default async function Profile() {

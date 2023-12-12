@@ -11,7 +11,7 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: 'Bestshave.ru • Только качественные товары для мужчин',
+  title: 'Bestshave.ru • Качественные товары для мужчин',
   description:
     'Bestshave — интернет-магазин косметики и аксессуаров для бритья',
 }

@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Мои заказы | Bestshave',
+  title: 'Мои заказы • Bestshave',
 }
 
 export default function ProfileOrders() {

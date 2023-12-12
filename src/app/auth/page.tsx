@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 import { SigninForm } from '@/features/auth'
 
 export const metadata: Metadata = {
-  title: 'Авторизация | Bestshave',
+  title: 'Авторизация • Bestshave',
 }
 
 export default function Auth() {
